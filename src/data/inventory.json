@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "White Bread 700g",
+    "category": "Bakery",
+    "image": "/images/White_Bread.png",
+    "prices": {
+      "Shoprite": 16.99,
+      "Checkers": 18.99,
+      "PicknPay": 17.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Ritebrand White Bread 700g", "price": 14.99 }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Sunflower Oil 2L",
+    "category": "Pantry",
+    "image": "/images/Cooking_Oil.jpg",
+    "prices": {
+      "Shoprite": 64.99,
+      "Checkers": 69.99,
+      "PicknPay": 62.99
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Housebrand Oil 2L", "price": 58.99 }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Maize Meal 5kg",
+    "category": "Pantry",
+    "image": "/images/maize-meal.png",
+    "prices": {
+      "Shoprite": 59.99,
+      "Checkers": 62.99,
+      "PicknPay": 61.50
+    },
+    "substitutions": []
+  }
+]
