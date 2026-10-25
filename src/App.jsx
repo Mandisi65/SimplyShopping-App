@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import inventoryData from './data/inventory.json';
+import './assets/styles/App.css'
 
 function App(){
   const [items, setItems] = useState(inventoryData);
