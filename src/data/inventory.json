@@ -1,7 +1,9 @@
 [
   {
     "id": "1",
-    "name": "White Bread 700g",
+    "name": "White Bread",
+    "brand": "Blue Ribbon",
+    "size": "700g",
     "category": "Bakery",
     "image": "/images/White_Bread.png",
     "prices": {
@@ -15,7 +17,9 @@
   },
   {
     "id": "2",
-    "name": "Sunflower Oil 2L",
+    "name": "Sunflower Oil",
+    "brand": "Sunfoil",
+    "size": "2L",
     "category": "Pantry",
     "image": "/images/Cooking_Oil.jpg",
     "prices": {
@@ -24,12 +28,14 @@
       "PicknPay": 62.99
     },
     "substitutions": [
-      { "store": "Shoprite", "name": "Housebrand Oil 2L", "price": 58.99 }
+      { "store": "Shoprite", "name": "Housebrand Cooking Oil 2L", "price": 58.99 }
     ]
   },
   {
     "id": "3",
-    "name": "Maize Meal 5kg",
+    "name": "Maize Meal",
+    "brand": "White Star",
+    "size": "5kg",
     "category": "Pantry",
     "image": "/images/maize-meal.png",
     "prices": {
@@ -37,6 +43,279 @@
       "Checkers": 62.99,
       "PicknPay": 61.50
     },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Ritebrand Maize Meal 5kg", "price": 52.99 }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Chicken Braai Pack",
+    "brand": "Freshline / Butcher",
+    "size": "1.5kg",
+    "category": "Butchery",
+    "image": "/images/spar-chicken-braai-pack.jpg",
+    "prices": {
+      "Shoprite": 79.99,
+      "Checkers": 84.99,
+      "PicknPay": 82.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Housebrand Frozen Chicken Pack 1.5kg", "price": 72.99 }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Beef Rump Steak",
+    "brand": "Steak Co.",
+    "size": "1kg",
+    "category": "Butchery",
+    "image": "/images/spar_beef_rump_steak.jpg",
+    "prices": {
+      "Shoprite": 109.99,
+      "Checkers": 119.99,
+      "PicknPay": 114.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Bulk Stewing Beef 1kg", "price": 94.99 }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Potatoes",
+    "brand": "Freshline",
+    "size": "3kg Bag",
+    "category": "Staples",
+    "image": "/images/sparfreshline_potatoes.jpg",
+    "prices": {
+      "Shoprite": 29.99,
+      "Checkers": 34.99,
+      "PicknPay": 32.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Budget Potatoes 3kg", "price": 24.99 }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Trifling Cake",
+    "brand": "Baker Assorted",
+    "size": "Each",
+    "category": "Bakery",
+    "image": "/images/spartriffling_cake.jpg",
+    "prices": {
+      "Shoprite": 39.99,
+      "Checkers": 44.99,
+      "PicknPay": 42.00
+    },
     "substitutions": []
+  },
+  {
+    "id": "8",
+    "name": "Long Life Tomatoes",
+    "brand": "Freshline",
+    "size": "1kg",
+    "category": "Staples",
+    "image": "/images/sparlonglife_tomatoes.webp",
+    "prices": {
+      "Shoprite": 22.99,
+      "Checkers": 26.99,
+      "PicknPay": 24.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Loose Tomatoes 1kg", "price": 18.99 }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Macaroni Pasta",
+    "brand": "Fatti's & Moni's",
+    "size": "500g",
+    "category": "Pantry",
+    "image": "/images/fattisNmonnis_macaron.jpg",
+    "prices": {
+      "Shoprite": 17.99,
+      "Checkers": 19.99,
+      "PicknPay": 18.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Housebrand Macaroni 500g", "price": 13.99 }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Full Cream Milk",
+    "brand": "Clover",
+    "size": "2L",
+    "category": "Dairy",
+    "image": "/images/clover_fullcreammilk.webp",
+    "prices": {
+      "Shoprite": 33.99,
+      "Checkers": 36.99,
+      "PicknPay": 35.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Housebrand Fresh Milk 2L", "price": 29.99 }
+    ]
+  },
+
+  {
+    "id": "11",
+    "name": "Long Life Milk",
+    "brand": "First Choice",
+    "size": "6 x 1L",
+    "category": "Dairy",
+    "image": "/images/firstchoice_longlifemilk.jpg",
+    "prices": {
+      "Shoprite": 94.99,
+      "Checkers": 99.99,
+      "PicknPay": 97.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Housebrand UHT Milk 6x1L", "price": 89.99 }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Brown Sugar",
+    "brand": "Selati",
+    "size": "2kg",
+    "category": "Pantry",
+    "image": "/images/selati_brownsugar.jpg",
+    "prices": {
+      "Shoprite": 44.99,
+      "Checkers": 48.99,
+      "PicknPay": 46.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Ritebrand Brown Sugar 2kg", "price": 41.99 }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Rooibos Tea",
+    "brand": "Freshpak",
+    "size": "80s",
+    "category": "Pantry",
+    "image": "/images/rooibos_freshpack.jpg",
+    "prices": {
+      "Shoprite": 39.99,
+      "Checkers": 43.99,
+      "PicknPay": 41.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Housebrand Rooibos 80s", "price": 34.99 }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Instant Coffee",
+    "brand": "Jacobs Krönung",
+    "size": "200g",
+    "category": "Pantry",
+    "image": "/images/jacobs_instantcoffee.jpg",
+    "prices": {
+      "Shoprite": 119.99,
+      "Checkers": 129.99,
+      "PicknPay": 124.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Biccard Gold Coffee 200g", "price": 89.99 }
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Spekboom Boerewors",
+    "brand": "Enterprise / Butcher",
+    "size": "1kg",
+    "category": "Butchery",
+    "image": "/images/spekboom_boerwors.jpg",
+    "prices": {
+      "Shoprite": 89.99,
+      "Checkers": 99.99,
+      "PicknPay": 94.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Shoprite Butcher's Classic Boerewors 1kg", "price": 79.99 }
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Fresh Onions",
+    "brand": "Freshline",
+    "size": "2kg Bag",
+    "category": "Fresh Produce",
+    "image": "/images/sparfreshline_onions.jpeg",
+    "prices": {
+      "Shoprite": 24.99,
+      "Checkers": 29.99,
+      "PicknPay": 27.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Bulk Loose Onions 2kg", "price": 21.99 }
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Canned Baked Beans",
+    "brand": "Koo",
+    "size": "410g",
+    "category": "Pantry",
+    "image": "/images/koo_bakedbeans.jpg",
+    "prices": {
+      "Shoprite": 13.99,
+      "Checkers": 15.99,
+      "PicknPay": 14.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Ritebrand Baked Beans 410g", "price": 10.99 }
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Tomato Sauce",
+    "brand": "All Gold",
+    "size": "700ml",
+    "category": "Pantry",
+    "image": "/images/allgold_tomatoesource.webp",
+    "prices": {
+      "Shoprite": 38.99,
+      "Checkers": 42.99,
+      "PicknPay": 40.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Housebrand Tomato Sauce 700ml", "price": 29.99 }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Medium Eggs",
+    "brand": "Alzu / Farmfresh",
+    "size": "18 Pack",
+    "category": "Dairy",
+    "image": "/images/alzu_mediumeggs.webp",
+    "prices": {
+      "Shoprite": 54.99,
+      "Checkers": 59.99,
+      "PicknPay": 57.50
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Shoprite Value Eggs 18s", "price": 49.99 }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "White Superior Sliced Bread",
+    "brand": "Albany",
+    "size": "700g",
+    "category": "Bakery",
+    "image": "/images/albany_whitebread.jpg",
+    "prices": {
+      "Shoprite": 17.49,
+      "Checkers": 18.99,
+      "PicknPay": 17.99
+    },
+    "substitutions": [
+      { "store": "Shoprite", "name": "Ritebrand White Bread 700g", "price": 14.99 }
+    ]
   }
 ]
