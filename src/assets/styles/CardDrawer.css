@@ -1,0 +1,215 @@
+/* ==========================================
+   Cart Drawer Component Styles
+   Palette: #3380D3, #FFC107, #1D5BB2
+   ========================================== */
+
+.drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.drawer {
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
+  animation: slideLeft 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.drawer-header {
+  padding: 18px 20px;
+  background-color: #1d5bb2; /* Deep Navy Header */
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer-header h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Pure white icon overlay */
+}
+
+.icon-img-sm {
+  width: 16px;
+  height: 16px;
+}
+
+.drawer-body {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.empty-cart-text {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}
+
+/* Individual Item Row */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.cart-item-details strong {
+  display: block;
+  font-size: 0.92rem;
+  color: #1e293b;
+}
+
+.cart-item-sub {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* Quantity Control Buttons */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-controls button:not(.remove-btn) {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #1e293b;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.qty-controls button:not(.remove-btn):hover {
+  border-color: #3380d3;
+  color: #3380d3;
+  background-color: #eaf2fb;
+}
+
+.qty-controls span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  min-width: 18px;
+  text-align: center;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #fee2e2;
+}
+
+.remove-btn img {
+  filter: invert(30%) sepia(85%) saturate(2400%) hue-rotate(338deg) brightness(90%) contrast(90%); /* Red icon tint */
+}
+
+/* Drawer Footer */
+.drawer-footer {
+  padding: 18px 20px;
+  border-top: 1px solid #e2e8f0;
+  background-color: #ffffff;
+}
+
+.optimize-btn {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #ffc107; /* Warm Sunshine Yellow */
+  color: #1d5bb2; /* Deep Navy Text */
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.35);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.optimize-btn:hover {
+  background-color: #ffb300;
+  transform: translateY(-1px);
+}
+
+.optimize-btn:active {
+  transform: scale(0.98);
+}
+
+.btn-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}

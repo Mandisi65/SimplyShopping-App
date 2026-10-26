@@ -1,0 +1,254 @@
+/* ==========================================
+   Optimizer Dashboard / Modal Styles
+   Palette: #3380D3, #FFC107, #1D5BB2
+   ========================================== */
+
+.dashboard-modal {
+  width: 90%;
+  max-width: 680px;
+  max-height: 90vh;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: auto;
+  animation: modalScaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dashboard-body {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* AI Suggestions Toggle Box */
+.setting-toggle-box {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1d5bb2;
+  cursor: pointer;
+}
+
+.toggle-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #3380d3;
+  cursor: pointer;
+}
+
+/* Section Headers */
+.section-header {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Single Store Grid Cards */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.dash-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dash-card h4 {
+  margin: 0 0 6px 0;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.dash-price {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.cheapest-card {
+  background-color: #eaf2fb;
+  border: 2px solid #3380d3;
+}
+
+.cheapest-card h4 {
+  color: #1d5bb2;
+  font-weight: 700;
+}
+
+.card-header-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon-img-trophy {
+  width: 18px;
+  height: 18px;
+}
+
+.save-tag {
+  margin-top: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background-color: #ffc107;
+  color: #1d5bb2;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+/* Multi-Store Split Route Card */
+.hero-split-card {
+  background: linear-gradient(135deg, #1d5bb2 0%, #3380d3 100%);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.strategy-text {
+  margin: 0 0 14px 0;
+  font-size: 0.88rem;
+  opacity: 0.95;
+}
+
+.split-groups-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.split-group {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.split-group h5 {
+  margin: 0 0 8px 0;
+  font-size: 0.85rem;
+  color: #ffc107;
+  font-weight: 700;
+}
+
+.split-group ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.total-savings-banner {
+  background-color: #ffffff;
+  color: #1d5bb2;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.savings-highlight {
+  color: #2e7d32;
+  font-weight: 700;
+}
+
+/* Substitution Alert Banner */
+.suggestion-box {
+  background-color: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.suggestion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.suggestion-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.suggestion-title h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #b78103;
+}
+
+.suggestion-box p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #5d4037;
+  line-height: 1.4;
+}
+
+.close-btn-sm {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.close-btn-sm:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Modal Animation */
+@keyframes modalScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+  .dashboard-grid,
+  .split-groups-container {
+    grid-template-columns: 1fr;
+  }
+}

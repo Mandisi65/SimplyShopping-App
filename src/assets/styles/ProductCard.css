@@ -1,0 +1,91 @@
+/* ==========================================
+   Product Card Component Styles
+   Palette: #3380D3, #FFC107, #1D5BB2
+   ========================================== */
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  background-color: #f8fafc;
+  padding: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.card-body {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.category-badge {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #1d5bb2; /* Deep Navy */
+  background-color: #eaf2fb;
+  padding: 3px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+}
+
+.card-meta {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0 0 10px 0;
+}
+
+.card-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3380d3; /* Primary Blue */
+  margin: auto 0 12px 0;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #3380d3; /* Primary Blue */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.add-btn:hover {
+  background-color: #1d5bb2; /* Deep Navy */
+}
+
+.add-btn:active {
+  transform: scale(0.98);
+}
